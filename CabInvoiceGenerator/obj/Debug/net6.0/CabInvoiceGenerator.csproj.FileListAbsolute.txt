@@ -1,0 +1,15 @@
+D:\BL\LinuxBatch-560\LFP-183-DotNet\CabInvoiceGenerator\CabInvoiceGenerator\bin\Debug\net6.0\CabInvoiceGenerator.exe
+D:\BL\LinuxBatch-560\LFP-183-DotNet\CabInvoiceGenerator\CabInvoiceGenerator\bin\Debug\net6.0\CabInvoiceGenerator.deps.json
+D:\BL\LinuxBatch-560\LFP-183-DotNet\CabInvoiceGenerator\CabInvoiceGenerator\bin\Debug\net6.0\CabInvoiceGenerator.runtimeconfig.json
+D:\BL\LinuxBatch-560\LFP-183-DotNet\CabInvoiceGenerator\CabInvoiceGenerator\bin\Debug\net6.0\CabInvoiceGenerator.dll
+D:\BL\LinuxBatch-560\LFP-183-DotNet\CabInvoiceGenerator\CabInvoiceGenerator\bin\Debug\net6.0\CabInvoiceGenerator.pdb
+D:\BL\LinuxBatch-560\LFP-183-DotNet\CabInvoiceGenerator\CabInvoiceGenerator\obj\Debug\net6.0\CabInvoiceGenerator.csproj.AssemblyReference.cache
+D:\BL\LinuxBatch-560\LFP-183-DotNet\CabInvoiceGenerator\CabInvoiceGenerator\obj\Debug\net6.0\CabInvoiceGenerator.GeneratedMSBuildEditorConfig.editorconfig
+D:\BL\LinuxBatch-560\LFP-183-DotNet\CabInvoiceGenerator\CabInvoiceGenerator\obj\Debug\net6.0\CabInvoiceGenerator.AssemblyInfoInputs.cache
+D:\BL\LinuxBatch-560\LFP-183-DotNet\CabInvoiceGenerator\CabInvoiceGenerator\obj\Debug\net6.0\CabInvoiceGenerator.AssemblyInfo.cs
+D:\BL\LinuxBatch-560\LFP-183-DotNet\CabInvoiceGenerator\CabInvoiceGenerator\obj\Debug\net6.0\CabInvoiceGenerator.csproj.CoreCompileInputs.cache
+D:\BL\LinuxBatch-560\LFP-183-DotNet\CabInvoiceGenerator\CabInvoiceGenerator\obj\Debug\net6.0\CabInvoiceGenerator.dll
+D:\BL\LinuxBatch-560\LFP-183-DotNet\CabInvoiceGenerator\CabInvoiceGenerator\obj\Debug\net6.0\refint\CabInvoiceGenerator.dll
+D:\BL\LinuxBatch-560\LFP-183-DotNet\CabInvoiceGenerator\CabInvoiceGenerator\obj\Debug\net6.0\CabInvoiceGenerator.pdb
+D:\BL\LinuxBatch-560\LFP-183-DotNet\CabInvoiceGenerator\CabInvoiceGenerator\obj\Debug\net6.0\CabInvoiceGenerator.genruntimeconfig.cache
+D:\BL\LinuxBatch-560\LFP-183-DotNet\CabInvoiceGenerator\CabInvoiceGenerator\obj\Debug\net6.0\ref\CabInvoiceGenerator.dll
