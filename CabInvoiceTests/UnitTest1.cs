@@ -48,5 +48,19 @@ namespace CabInvoiceTests
                 Assert.AreEqual(expected, ex.Message);
             }
         }
+        //UC2 Test for aggregate for normal Ride
+        [Test]
+        public void TestAggrigateNormalRide()
+        {
+            CalculateInvoice calculate = new CalculateInvoice(CalculateInvoice.RideType.Normal);
+            Ride[] ride =
+            {
+                new Ride(3, 5.0),
+                new Ride(6,7.0)
+            };
+            double actual = calculate.CalculateAggregateFare(ride);
+            double expected = 129;
+            Assert.AreEqual(expected, actual);
+        }
     }
 }

@@ -40,5 +40,18 @@ namespace CabInvoiceGenerator
             totalFare = distance * costPerKm + time * costPerMin;
             return Math.Max(minimumFare, totalFare);
         }
+        public double CalculateAggregateFare(Ride[] rides)
+        {
+            double aggregateFare = 0;
+            if (rides.Length == 0)
+            {
+                throw new InvoiceCustomException(InvoiceCustomException.ExceptionType.INVALID_RIDE_COUNT, "invalid ride count");
+            }
+            foreach(var ride in rides)
+            {
+                aggregateFare += CalculateFare(ride.time, ride.distance);
+            }
+            return aggregateFare;
+        }
     }
 }
