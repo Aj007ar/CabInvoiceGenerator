@@ -84,5 +84,50 @@ namespace CabInvoiceTests
             Assert.AreEqual(actual, expected);
 
         }
+        [Test]
+        public void CalculateTotalFareForPremiumRide()
+        {
+            CalculateInvoice cabInvoiceCalculate = new CalculateInvoice(CalculateInvoice.RideType.Premium);
+            double distance = 4.8;
+            int time = 20;
+            double fare = cabInvoiceCalculate.CalculateFare(time, distance);
+            double expected = 112.0;
+            Assert.AreEqual(expected, fare);
+
+        }
+        [Test]
+        public void InvalidDistanceCalculateTotalFareForPremiumRide()
+        {
+            try
+            {
+                CalculateInvoice cabInvoiceCalculate = new CalculateInvoice(CalculateInvoice.RideType.Premium);
+                double distance = 0;
+                int time = 12;
+                cabInvoiceCalculate.CalculateFare(time, distance);
+
+            }
+            catch (InvoiceCustomException ex)
+            {
+                string expected = "Invalid distance";
+                Assert.AreEqual(expected, ex.Message);
+            }
+        }
+        [Test]
+        public void InvalidTimeCalculateTotalFareForPremiumRide()
+        {
+            try
+            {
+                CalculateInvoice cabInvoiceCalculate = new CalculateInvoice(CalculateInvoice.RideType.Premium);
+                double distance = 12;
+                int time = 0;
+                cabInvoiceCalculate.CalculateFare(time, distance);
+
+            }
+            catch (InvoiceCustomException ex)
+            {
+                string expected = "Invalid time taken";
+                Assert.AreEqual(expected, ex.Message);
+            }
+        }
     }
 }
