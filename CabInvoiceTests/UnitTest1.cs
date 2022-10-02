@@ -71,5 +71,18 @@ namespace CabInvoiceTests
             string expected = "\nNo of rides: 2 \nTotal Fare: 198 \nAverage Fare: 99";
             Assert.AreEqual(actual, expected);
         }
+        [Test]
+        public void SearchForInvalidUserID()
+        {
+            RideRepository ride = new RideRepository();
+            Ride[] rides123 = { new Ride(3, 5.0), new Ride(6, 7.0) };
+            Ride[] rides124 = { new Ride(4, 6.0), new Ride(7, 8.0) };
+            ride.AddToDictionary("123", rides123);
+            ride.AddToDictionary("124", rides124);
+            string actual = ride.Search("125");
+            string expected = "Not found";
+            Assert.AreEqual(actual, expected);
+
+        }
     }
 }
