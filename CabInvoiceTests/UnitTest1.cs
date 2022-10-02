@@ -62,5 +62,14 @@ namespace CabInvoiceTests
             double expected = 129;
             Assert.AreEqual(expected, actual);
         }
+        [Test]
+        public void TestMethodToCheckInvoiceSummayForPremiumRides()
+        {
+            CalculateInvoice calculate = new CalculateInvoice(CalculateInvoice.RideType.Premium);
+            Ride[] ride = { new Ride(3, 5.0), new Ride(6, 7.0) };
+            string actual = calculate.InvoiceSummary(ride);
+            string expected = "\nNo of rides: 2 \nTotal Fare: 198 \nAverage Fare: 99";
+            Assert.AreEqual(actual, expected);
+        }
     }
 }
